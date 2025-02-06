@@ -42,35 +42,6 @@
                     "*.r": "r"
                 },
                 "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-                "keybindings": [
-                    {
-                        "key": "ctrl+shift+m",
-                        "command": "type",
-                        "args": { "text": " |> " },
-                        "when": "editorTextFocus && editorLangId == 'r'"
-                    },
-                    {
-                        "key": "alt+-",
-                        "command": "type",
-                        "args": { "text": " <- " },
-                        "when": "editorTextFocus && editorLangId == 'r'"
-                    },
-                    {
-                        "key": "ctrl+enter",
-                        "command": "r.runSelection",
-                        "when": "editorTextFocus && editorLangId == 'r'"
-                    },
-                    {
-                        "key": "ctrl+shift+s",
-                        "command": "r.source",
-                        "when": "editorTextFocus && editorLangId == 'r'"
-                    },
-                    {
-                        "key": "ctrl+up",
-                        "command": "r.runPrevious",
-                        "when": "editorTextFocus && editorLangId == 'r'"
-                    }
-                ]
             }
         }
     },
