@@ -1,28 +1,13 @@
 {
     "name": "R/Python Development",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "features": {
-        // 1) Installs R plus the tidyverse
-        "ghcr.io/rocker-org/devcontainer-features/tidyverse:1": {},
-        // 2) Python
-        "ghcr.io/devcontainers/features/python:1": {
-            "version": "3.11"
-        },
-        // 3) Newer Git
-        "ghcr.io/devcontainers/features/git:1": {
-            "version": "ppa-latest"
-        }
-    },
+    "image": "rocker/tidyverse:4.4",
     "customizations": {
         "vscode": {
             "extensions": [
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
-                "ms-python.python",
-                "ms-toolsai.jupyter",
                 "REditorSupport.r"
             ]
         }
-    },
-    "postCreateCommand": "pip install pandas numpy scipy scikit-learn"
+    }
 }
