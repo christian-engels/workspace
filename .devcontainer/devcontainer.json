@@ -38,10 +38,7 @@
                     "editor.shortcuts.r.pipe": true,
                     "editor.snippets.codeActions.enabled": true
                 },
-                "workbench.editorAssociations": {
-                    "*.r": "r"
-                },
-                "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+                "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
             }
         }
     },
