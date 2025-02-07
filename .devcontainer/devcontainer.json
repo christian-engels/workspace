@@ -27,10 +27,13 @@
                 "r.editor.tabSize": 2,
                 "r.editor.formatOnSave": true,
                 "r.editor.formatOnType": true,
-                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.defaultProfile.linux": "radian",
                 "terminal.integrated.profiles.linux": {
                     "zsh": {
                         "path": "zsh"
+                    },
+                    "radian": {
+                        "path": "radian"
                     }
                 },
                 "keyboard.dispatch": "keyCode",
