@@ -45,7 +45,6 @@
             }
         }
     },
-    "postCreateCommand": "radian",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
