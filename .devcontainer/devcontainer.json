@@ -43,7 +43,9 @@
                 },
                 "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
             }
-        }
+        },
+        "overrideCommand": false,
+        "postAttachCommand": "radian"
     },
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
