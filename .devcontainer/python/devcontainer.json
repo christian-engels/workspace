@@ -1,0 +1,38 @@
+{
+    "name": "Data Science Environment",
+    "image": "franzdiebold/datascience-ultimate",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true,
+                "python.formatting.provider": "black",
+                "python.analysis.typeCheckingMode": "basic",
+                "python.testing.unittestEnabled": true,
+                "python.testing.pytestEnabled": true,
+                "python.testing.nosetestsEnabled": false,
+                "python.testing.autoTestDiscoverOnSaveEnabled": true,
+                "editor.formatOnSave": true,
+                "editor.formatOnType": true,
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "bash"
+                    }
+                }
+            }
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    }
+}
