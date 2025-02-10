@@ -17,6 +17,7 @@ peewee
 polars
 plotnine
 psycopg2-binary
+pyfixest
 pyhdfe
 python-dotenv
 SQLAlchemy
