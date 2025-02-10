@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Python",
+            "path": "python/.devcontainer"
+        },
+        {
+            "name": "R",
+            "path": "r/.devcontainer"
+        }
+    ]
+}
