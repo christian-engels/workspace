@@ -19,7 +19,6 @@
                 "charliermarsh.ruff"
             ],
             "settings": {
-                "python.pythonPath": "/usr/local/bin/python",
                 "python.linting.enabled": true,
                 "python.linting.pylintEnabled": true,
                 "python.formatting.provider": "black",
@@ -33,9 +32,21 @@
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": {
                     "bash": {
-                        "path": "bash"
+                        "path": "/bin/bash"
                     }
-                }
+                },
+                // Make sure conda environment is activated automatically:
+                "python.terminal.executeInFileDir": true,
+                "python.terminal.activateEnvironment": true,
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                // Send SHIFT+ENTER to terminal rather than interactive window:
+                "python.dataScience.sendSelectionToInteractiveWindow": false,
+                // Launch IPython instead of vanilla Python
+                "python.terminal.launchArgs": [
+                    "-i",
+                    "-m",
+                    "IPython"
+                ]
             }
         }
     },
