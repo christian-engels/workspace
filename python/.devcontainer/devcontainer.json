@@ -1,15 +1,22 @@
 {
-    "name": "Data Science Environment",
-    "image": "franzdiebold/datascience-ultimate",
+    "name": "Python",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
+                "data-wrangler.vscode-data-wrangler",
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
                 "ms-python.python",
                 "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
                 "ms-azuretools.vscode-docker",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "ms-vscode-remote.vscode-remote-extensionpack",
+                "charliermarsh.ruff"
             ],
             "settings": {
                 "python.pythonPath": "/usr/local/bin/python",

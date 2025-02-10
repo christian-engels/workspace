@@ -1,16 +1,16 @@
 {
-    "name": "R Development",
-    "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.4",
+    "name": "R",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
                 "REditorSupport.r",
-                "quarto.quarto",
-                "ms-python.python",
-                "ms-azuretools.vscode-docker",
-                "eamodio.gitlens"
+                "REditorSupport.r-lsp",
+                "RDebugger.r-debugger"
             ],
             "settings": {
                 "r.rterm.linux": "/usr/local/bin/radian",
@@ -27,32 +27,27 @@
                 "r.editor.tabSize": 2,
                 "r.editor.formatOnSave": true,
                 "r.editor.formatOnType": true,
-                "terminal.integrated.defaultProfile.linux": "R",
-                "terminal.integrated.profiles.linux": {
-                    "zsh": {
-                        "path": "zsh"
-                    },
-                    "R": {
-                        "path": "radian",
-                        "title": "R",
-                        "args": []
-                    }
-                },
+                "r.lsp.enabled": true,
                 "keyboard.dispatch": "keyCode",
+                "editor.formatOnSave": true,
+                "editor.formatOnType": true,
+                "files.associations": {
+                    "*.rmd": "rmd"
+                },
+                "[rmd]": {
+                    "editor.wordWrap": "on"
+                },
                 "[r]": {
                     "editor.shortcuts.r.pipe": true,
                     "editor.snippets.codeActions.enabled": true
                 },
-                "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+                "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+                "terminal.integrated.defaultProfile.linux": "R Terminal",
+                "terminal.integrated.tabs.focusMode": "singleClick"
             }
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
-        "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-            "packages": "languageserver,httpgd",
-            "installSystemRequirements": true
-        }
+        "ghcr.io/devcontainers/features/git:1": {}
     }
 }

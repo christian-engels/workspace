@@ -9,10 +9,10 @@ data <- mtcars
 summary(data)
 
 # Plotting
-ggplot(data, aes(x=wt, y=mpg)) +
+ggplot(data, aes(x = wt, y = mpg)) +
   geom_point() +
-  labs(title="Weight vs MPG",
-       x="Weight",
-       y="Miles per Gallon")
-
-       
+  labs(
+    title = "Weight vs MPG",
+    x = "Weight",
+    y = "Miles per Gallon"
+  )
