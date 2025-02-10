@@ -1,8 +1,8 @@
 {
     "recommendations": [
         "kylebarron.stata-enhanced",
-        "StataEditor.stata-language",
-        "StataEditor.stataRun",
+        "mdob2k.stata-language",
+        "yeaoh.statarun",
         "GitHub.copilot",
         "GitHub.copilot-chat"
     ]
